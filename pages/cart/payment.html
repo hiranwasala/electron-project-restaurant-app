@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../home/home.css">
+    <link rel="stylesheet" href="payment.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+  
+    <title>Document</title>
+</head>
+<body>
+    <div class="containor">
+
+         <div class="payment">
+            <div class="master-visa">
+                <img src="../../images/mastercard.256x198.png" alt="">
+                <img src="../../images/visa-removebg-preview.png" alt="" id="visa">
+            </div>
+           <div class="payment-content">
+            <div class="input-containor">
+                <div class="title">Card Number</div>
+                <input type="number" placeholder="Card Number"  id="card-number">
+                 
+                <div class="date-cvc">
+                    <div class="input-containor">
+                        <div class="title">Expiary Date</div>
+                        <input type="number" placeholder="Expier Date" id="date">
+                    </div> 
+        
+                    <div class="input-containor">
+                        <div class="title">CVC</div>
+                        <input type="number" placeholder="CVC" id="cvc">
+                    </div> 
+                </div>
+    
+                <div class="btn-content">
+                    <button id="payBtn" onclick="validate()">Pay Now</button>
+                    <button  onclick="cancel()">Cancel</button>
+                </div>
+           </div>
+            
+           </div>
+         </div>
+    </div>
+   <script src="cart.js"></script>
+   <script src="../../log_out.js"></script>
+
+
+</body>
+</html>

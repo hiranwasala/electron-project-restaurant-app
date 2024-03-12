@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../home/home.css">
+    <link rel="stylesheet" href="cart.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+  
+    <title>Document</title>
+</head>
+<body>
+ 
+    <div class="containor">
+        <div class="nav-bar-containor">
+            <div class="logo"><img src="../../images/icons8-restaurant.gif" alt=""></div>
+    
+            <div class="nav-bar">
+                <div class="nav-bar-item">
+                   <a href="../home/home.html"><img src="../../images/icons8-home-30.png" alt="" ></a> 
+                </div>
+    
+                <div class="nav-bar-item">
+                   <a href="../categories/allitems.html"> <img src="../../images/icons8-grid-30.png" alt="" ></a>
+                </div>
+
+                <div class="nav-bar-item">
+                    <a href="../favorites/favorites.html"> <img src="../../images/icons8-favorite-30.png" alt="" ></a>
+                 </div>
+
+                 <div class="nav-bar-item" id="active">
+                    <a href="../cart/cart.html"><img src="../../images/icons8-add-to-cart-30.png" alt="" id="nav-item"></a>
+                </div>
+    
+                <div class="nav-bar-item">
+                    <a href="../settings/settings.html"><img src="../../images/icons8-about-us-30.png" alt="" id="nav-item"></a>
+                </div>
+            </div>
+    
+         
+            <div class="log-out" id="log-out">
+                <img src="../../images/icons8-log-out-30.png" alt="">
+            </div>
+        </div>
+
+      
+        <div class="add-to-cart">
+            <h1>Order List</h1>
+            <div id="cart-content" class="product-container">
+              
+            </div>
+            <hr>
+            <div class="total-amount">
+                <h2>Total amount</h2>
+                <h2 id="total-amount">$0.00</h2>
+                <button class="check-out">Check Out</button>
+            </div>
+            
+        </div>
+        <div id="snackbar"></div>
+       
+    </div>
+   <script src="cart.js"></script>
+   <script src="../../log_out.js"></script>
+
+
+</body>
+</html>

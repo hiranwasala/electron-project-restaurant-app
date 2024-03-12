@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+   <link rel="stylesheet" href="../pages/categories/categories.css">
+  
+   
+  
+    <title>Document</title>
+</head>
+<body>
+    
+    <div class="containor">
+        <div class="nav-bar-containor">
+            <div class="logo"><img src="../images/icons8-restaurant.gif" alt=""></div>
+            <div class="nav-bar">
+    
+                <div class="nav-bar-item" id="active">
+                   <a href="#"> <img src="../images/icons8-grid-30.png" alt="" ></a>
+                </div>
+
+            </div>
+    
+            <div class="log-out" id="log-out">
+                <img src="../images/icons8-log-out-30.png" alt="">
+            </div>
+        </div>
+
+
+        <div class="content">
+            
+
+
+            <div class="add-item">
+                <div class="add-item-content">
+                    <div id="add-item-title">Add Item</div>
+
+                <div class="select-content">
+                    <div class="left">
+                        <div class="input-containor">
+                            <div class="title">Category</div>
+                            <select id="categoryFilter" onchange="filterItemsByCategory()">
+                                <option value="Pizza">Pizza</option>
+                                <option value="Burgers">Burgers</option>
+                                <option value="Drinks">Drinks</option>
+                                <option value="Submarine">Submarine</option>
+                            </select>
+                        </div>
+        
+                        <div class="input-containor">
+                            <div class="title">Prize</div>
+                            <input type="number" placeholder="prize" id="input-box-1">
+                        </div>
+                    
+                    
+                    </div>
+    
+                    <div class="right">
+                        <div class="input-containor">
+                            <div class="title">Title</div>
+                            <input type="text" placeholder="title" id="input-box-2">
+                        </div>
+
+                        <div class="input-containor">
+                            <div class="title">Image</div>
+                            <input type="text" placeholder="Image link" id="input-box-3">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="btn-content">
+                    <button id="addButton" onclick="addItem()">Add Item</button>
+                    <button>Cancel</button>
+                </div>
+                </div>
+
+                <img src="../images/WNRA-unscreen.gif" alt="">
+
+            </div>
+            
+            <div class="tab-bar">
+
+                <a href="admin.html">
+                    <div class="tab-item">
+                        <div class="tab-icon">
+                            <img src="../images/grid.png" alt="">
+                        </div>
+                        <div class="tab-content">
+                            <h3 >All Items</h3>
+                            <p ></p>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="pizza.html">
+                    <div class="tab-item" >
+                        <div class="tab-icon" >
+                            <img src="../images/pizza.png" alt="">
+                        </div>
+                        <div class="tab-content">
+                            <h3 >Pizza</h3>
+                            <p></p>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="burgers.html">
+                    <div class="tab-item">
+                        <div class="tab-icon">
+                            <img src="../images/burger.png" alt="">
+                        </div>
+                        <div class="tab-content">
+                            <h3>Burgers</h3>
+                            <p></p>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="drinks.html">
+                    <div class="tab-item" id="tab">
+                        <div class="tab-icon" id="tab-image">
+                            <img src="../images/sparkling-water.png" alt="">
+                        </div>
+                        <div class="tab-content">
+                            <h3  id="item-title">Drinks</h3>
+                            <p class="drinks-items"  id="item-sub">0</p>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="submarine.html">
+                    <div class="tab-item">
+                        <div class="tab-icon" id="submarine-icon">
+                            <img src="../images/sandwich.png" alt="">
+                        </div>
+                        <div class="tab-content">
+                            <h3>Submarine</h3>
+                            <p></p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        
+            <div id="Pizza-containor" class="grid-collection">
+                <div class="row" id="grid-row">
+
+                    </div>
+                </div>
+        </div>
+                          
+                       
+           
+                
+
+
+       <div id="snackbar"></div>
+
+       
+
+        
+    </div>
+  
+    
+ <script  src="../pages/categories/categories.js"></script>
+ <script src="drinks.js"></script>
+ <script src="admin_log_out.js"></script>
+    
+</body>
+</html>
