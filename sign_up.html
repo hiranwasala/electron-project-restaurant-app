@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Open+Sans&family=Poppins:wght@200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+</head>
+<body>
+        <h1>Red Stiletto Restaurant</h1>
+        <div class="login-form" id="logForm">
+            <div class="login-image">
+                <img src="../Electron_1/images/Shopping Options.gif" alt="">
+            </div>
+            <div class="login-content">
+                <h2>Sign up</h2>
+                <div class="input-containor">
+                    <div class="title">Username</div>
+                    <input type="text" placeholder="Username" id="username">
+                </div>
+
+                <div class="input-containor" id="password-wrapper">
+                    <div class="title">Password</div>
+                    <input type="password" placeholder="Password" class="password-input" id="password">
+                    <i class="fa fa-eye show-pass" aria-hidden="true" id="password-icon"></i>
+
+                </div>
+
+                <div class="input-containor" id="password-wrapper">
+                    <div class="title">Confirm Password</div>
+                    <input type="password" placeholder="Confirm Password" class="password-input" id="confirm-password">
+                    <i class="fa fa-eye show-pass" aria-hidden="true" id="confirm-password-icon"></i>
+                </div>
+
+                <select id="userPannel">
+                    <option value="User">User</option>
+                    <option value="Admin">Admin</option>
+                </select>
+                
+                <button type="button" onclick="createAccount()" id="createBtn">Create Account</button>
+
+                <p>Already have an Account? <span><a href="index.html">Log In</a></span></p>
+
+                <div id="snackbar"></div>
+            </div>
+            
+        </div>
+    <script src="signup.js"></script>
+</body>
+</html>
